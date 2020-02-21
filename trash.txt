@@ -1,0 +1,30 @@
+<%= form_for @feed, remote: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+    <p>
+      <%= form.label :website %><br>
+      <%= form.text_field :website %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>
+  <%= link_to 'Back', feeds_path %>
+<% if @feeds %>
+    <% @feeds.each do |feed| %>
+        <td><%= link_to 'Destroy', feed_path(feed), method: :delete%></td>
+        <td><%= link_to 'Update', feed_path(feed), method: :put %></td>
+        <div style="background: blue">
+            <% feed.articles.first(5).each do |article| %>
+                <div>
+                <a href=””><p><strong><%= article.title %></strong></p></a>
+                <p>
+                <%= article.body %>
+                </p>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+<% end %>
