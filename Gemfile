@@ -69,7 +69,7 @@ gem "simple-rss", "~> 1.3"
 
 gem "sanitize", "~> 5.0"
 
-gem "nokogiri", "~> 1.8"
+gem "nokogiri", "~> 1.10"
 
 gem "react-rails", "~> 2.4"
 
