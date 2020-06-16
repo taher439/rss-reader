@@ -67,7 +67,7 @@ gem "feedjira", "~> 2.2"
 
 gem "simple-rss", "~> 1.3"
 
-gem "sanitize", "~> 5.0"
+gem "sanitize", "~> 5.2"
 
 gem "nokogiri", "~> 1.8"
 
