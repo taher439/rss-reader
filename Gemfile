@@ -77,7 +77,7 @@ gem "webpacker", "~> 3.5"
 
 gem "js-routes", "~> 1.4"
 
-gem "json", "~> 2.1"
+gem "json", "~> 2.3"
 
 gem "bootstrap-sass", "~> 3.3"
 
